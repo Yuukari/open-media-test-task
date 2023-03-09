@@ -1,0 +1,22 @@
+.playerInstance {
+    background: #CFD3D6;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin: 0px auto;
+    padding: 20px;
+    box-sizing: border-box;
+
+    height: 198px;
+}
+
+.playerInstance__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+}

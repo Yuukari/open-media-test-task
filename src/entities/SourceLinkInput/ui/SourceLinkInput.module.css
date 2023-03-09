@@ -1,0 +1,27 @@
+.sourceLinkInput {
+    position: relative;
+    display: flex;
+}
+
+.sourceLinkInputWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.sourceLinkInput__input {
+    width: 100%;
+}
+
+.sourceLinkInput__error {
+    color: #C6A827;
+
+    position: absolute;
+    bottom: -24px;
+
+    font-family: 'Space Grotesk Light';
+    font-weight: 300;
+    font-size: 12px;
+
+    line-height: 16px;    
+    letter-spacing: -0.3px;
+}

@@ -1,0 +1,25 @@
+.audioPlayer {
+    width: 100%;
+}
+
+.audioPlayer__backButton {
+    background: transparent;
+    color: #1B191C;
+    border: none;
+
+    font-size: 24px;
+
+    letter-spacing: -0.4px;
+
+    cursor: pointer;
+
+    transition: color 0.15s;
+}
+
+.audioPlayer__backButton:hover {
+    color: #F8D231;
+}
+
+.audioPlayer__instance {
+    margin-top: 20px;
+}

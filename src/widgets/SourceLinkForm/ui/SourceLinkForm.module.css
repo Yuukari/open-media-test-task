@@ -1,0 +1,16 @@
+.sourceLinkForm {
+    width: 100%;
+}
+
+.sourceLinkForm__label {
+    color: #1B191C;
+
+    font-size: 24px;
+    line-height: 32px;
+
+    letter-spacing: -0.4px;
+}
+
+.sourceLinkForm__wrapper {
+    margin-top: 20px;
+}

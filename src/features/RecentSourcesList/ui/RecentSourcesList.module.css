@@ -1,0 +1,53 @@
+.recentSourcesList {
+    display: none;
+
+    position: absolute;
+    left: 0px;
+
+    width: 100%;
+    height: fit-content;
+    max-height: 200px;
+
+    padding: 8px;
+    box-sizing: border-box;
+    overflow-y: auto;
+
+    background: #FFFFFF;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.recentSourcesList_open {
+    display: block;
+}
+
+.recentSourcesList__item {
+    color: #A4A3A4;
+
+    font-family: 'Space Grotesk Light';
+    font-weight: 300;
+    font-size: 20px;
+    
+    line-height: 28px;
+    letter-spacing: -0.4px;
+
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+    cursor: pointer;
+    transition: color 0.15s;
+}
+
+.recentSourcesList__item:hover {
+    color: #5a595a;
+}
+
+.recentSourcesList__item:not(.recentSourcesList__item:last-child)::after {
+    content: ' ';
+    background: rgba(0, 0, 0, 0.1);
+
+    display: block;
+
+    height: 1px;
+    margin: 12px 0px;
+}

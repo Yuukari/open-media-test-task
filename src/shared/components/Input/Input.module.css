@@ -1,0 +1,36 @@
+.input {
+    color: #1B191C;
+    background: #FFFFFF;
+    border: 2px solid transparent;
+ 
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+
+    font-size: 24px;
+ 
+    min-width: 200px;
+    padding: 32px 16px;
+
+    transition: border-color 0.15s;
+}
+
+.input:hover, .input:focus {
+    outline: none;
+}
+
+.input:focus {
+    border-color: #F8D231;
+}
+
+.input::placeholder {
+    font-family: 'Space Grotesk Light';
+    font-weight: 300;
+    color: #A4A3A4;
+}
+
+@media screen and (max-width: 575px) {
+    .input {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,130 @@
+.playerPlaybackBar {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+
+    display: block;
+
+    width: 100%;
+    height: 12px;
+
+    cursor: pointer;
+}
+
+.playerPlaybackBar::-webkit-slider-runnable-track {
+    background: #ADACAD;
+
+    height: 2px;
+}
+
+.playerPlaybackBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+
+    background: #FFFFFF;
+    border-radius: 12px;
+
+    width: 16px;
+    height: 12px;
+    margin-top: -5px;
+}
+
+.playerPlaybackBar:disabled {
+    cursor: default;
+}
+
+.playerPlaybackBar_loading {
+    height: 6px;
+    padding: 0px 3px;
+    animation: barLoadingAnimation 1s infinite;
+
+    cursor: default;
+}
+
+.playerPlaybackBar.playerPlaybackBar_loading::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.playerPlaybackBar.playerPlaybackBar_loading::-webkit-slider-thumb,
+.playerPlaybackBar.playerPlaybackBar_streaming::-webkit-slider-thumb {
+    display: none;
+}
+
+.playerPlaybackBar_streaming {
+    background: #ADACAD;
+
+    height: 4px;
+    padding: 0px 4px;
+
+    cursor: default;
+}
+
+.playerPlaybackBar_streaming::-webkit-slider-runnable-track {
+    background: transparent;
+}
+
+.playerPlaybackBar_streamingPlaying {
+    background: linear-gradient(to right, #ADACAD 30%, #666565 50%, #ADACAD 70%), #ADACAD;
+    background-repeat: no-repeat;
+    animation: barStreamingAnimation 2s infinite linear;
+}
+
+
+@keyframes barLoadingAnimation {
+    from {
+        background: #ADACAD;
+    }
+
+    50% {
+        background: #666565;
+    }
+
+    to {
+        background: #ADACAD;
+    }
+}
+
+@keyframes barStreamingAnimation {
+    from {
+        background-position: -600px;
+    }
+
+    to {
+        background-position: 600px;
+    }
+}
+
+/* .playerPlaybackBar {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 12px;
+
+    cursor: pointer;
+}
+
+.playerPlaybackBar__track {
+    background: #ADACAD;
+
+    width: 100%;
+    height: 2px;
+}
+
+.playerPlaybackBar__thumb {
+    position: absolute;
+
+    top: 0px;
+    left: 0px;
+
+    width: 16px;
+    height: 12px;
+}
+
+.playerPlaybackBar__thumb svg {
+    display: block;
+    width: 100%;
+    height: auto;
+} */
