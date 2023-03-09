@@ -1,6 +1,6 @@
 # OpenMedia test task from Yuukari
 
-Deployment: [https://yuukari-openmedia-testtask.vercel.app/](https://yuukari-openmedia-testtask.vercel.app/)
+Deployment: [https://openmedia-testtask-yuukari.vercel.app/](https://openmedia-testtask-yuukari.vercel.app/)
 
 ### Выполненные дополнительные задания:
 
